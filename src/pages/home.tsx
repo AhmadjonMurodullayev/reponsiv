@@ -1,3 +1,11 @@
+import { ThreeD } from "../assets/3d";
+import { Art } from "../assets/Art";
+import { Copyuter } from "../assets/copyuter";
+import { Kasca } from "../assets/Kasca";
+import { Left } from "../assets/Left";
+import { PS4 } from "../assets/PS4";
+import { Telfon } from "../assets/telfon";
+
 export const Home = () => {
   return (
     <>
@@ -56,11 +64,48 @@ export const Home = () => {
       </div>
 
       <div className="w-[90%] max-w-[1410px] m-auto">
-        <div>
-          <h1>
+        <div className="text-center">
+          <h1 className="font-bold text-[20px]  text-center md:text-[35px] lg:text-[50px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </h1>
+          <p className="font-semibold text-[18px] my-6 lg:text-[30px]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+        </div>
+        <div className="my-10 flex flex-col gap-10 justify-center md:flex-row md:flex-wrap md:gap-20  ">
+          <div className="flex flex-col items-center gap-2">
+            <Telfon />
+            <h2>Mobile Game Development</h2>
+            <Left />
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Copyuter />
+            <h2>Mobile Game Development</h2>
+            <Left />
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <PS4 />
+            <h2>Mobile Game Development</h2>
+            <Left />
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Art />
+            <h2>Mobile Game Development</h2>
+            <Left />
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <ThreeD />
+            <h2>Mobile Game Development</h2>
+            <Left />
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Kasca />
+            <h2>Mobile Game Development</h2>
+            <Left />
+          </div>
         </div>
       </div>
     </>
